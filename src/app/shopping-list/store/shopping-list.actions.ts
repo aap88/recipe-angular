@@ -5,5 +5,7 @@ export const ADD_INGREDIENT = 'ADD_INGREDIENT';
 
 export class AddIngredient implements Action {
     readonly type = ADD_INGREDIENT;
-    payload: Ingredient; // The Action interface only forces you to add a "type" property
+    //payload: Ingredient; // The Action interface only forces you to add a "type" property
+
+    constructor(public payload: Ingredient) {}
 }
